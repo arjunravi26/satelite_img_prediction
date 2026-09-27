@@ -3,9 +3,8 @@
 A small offline service that classifies satellite image tiles using a locally-trained CNN Model,
 stores each result with a confidence-based information, and exposes a predict endpoint for classification.
 
-This is Part 2 of the take-home assignment: a working slice of the design
-described in [`DESIGN_NOTE.pdf`](./docs/DESIGN_NOTE.pdf), not a finished product. See
-**Known Limitations** below for what's intentionally stubbed.
+This is Part 2 of the take-home assignment: a basic working slice of the design
+described in [`DESIGN_NOTE.pdf`](./docs/DESIGN_NOTE.pdf).
 
 ## Architecture
 
@@ -30,9 +29,7 @@ API (FastAPI) → Service → Preprocessing → Model → Post-processing
 ## Model
 
 A small CNN(≈0.4M Parameter) (4 conv blocks + global average pool + linear head) trained from
-scratch in `experiment/sat_img_classifier.ipynb` on the provided tile dataset
-(7 classes: AnnualCrop, Forest, Highway, Industrial, Residential, River,
-SeaLake). Test accuracy ≈ 66%.
+scratch in `experiment/sat_img_classifier.ipynb` on the provided tile dataset. Test accuracy ≈ 66%.
 
 ## Setup
 
@@ -58,7 +55,6 @@ The app starts on `http://127.0.0.1:8000`, loads the model and opens the
 SQLite DB (`db_data/predictions.db`) on startup.
 
 - `http://127.0.0.1:8000/` — simple upload form for `/predict`
-- `http://127.0.0.1:8000/docs` — interactive Swagger UI for both endpoints
 
 ## API
 
