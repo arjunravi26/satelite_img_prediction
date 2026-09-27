@@ -2,7 +2,7 @@ from src.prediction.layers import model
 from src.utils.read_config import read_config
 import torch
 import os
-
+import time
 
 class Model:
     def __init__(self):

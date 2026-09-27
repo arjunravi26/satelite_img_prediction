@@ -5,7 +5,7 @@ from src.utils.get_service import get_service
 from src.service.service import Service
 predict_router = APIRouter()
 
-ALLOWED_IMAGE_TYPES = {"image/jpeg", "image/png", "image/webp"}
+ALLOWED_IMAGE_TYPES = {"image/png"}
 REQUIRED_SIZE = (64, 64)
 
 

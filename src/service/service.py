@@ -83,6 +83,6 @@ class Service:
 
             model_version = read_config("model_version")
             self.db.insert_prediction(img_name=img_name, img_path="", predicted_cls=predicted_cls, pred_cls_prob=pred_cls_prob,
-                                      prob=prob, need_review=need_review, review_reason=review_reason, review_status=0, model_version=model_version,)
+                                      prob=prob, need_review=need_review, review_reason=review_reason, review_status=None, model_version=model_version,)
         except Exception as e:
             raise
