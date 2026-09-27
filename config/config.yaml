@@ -1,0 +1,10 @@
+label_to_idx: {AnnualCrop: 0, Forest: 1, Highway: 2, Industrial: 3, Residential: 4, River: 5, SeaLake: 6}
+idx_to_label: {0: AnnualCrop, 1: Forest, 2: Highway, 3: Industrial, 4: Residential, 5: River, 6: SeaLake}
+labels:  [AnnualCrop, Forest, Highway, Industrial, Residential, River, SeaLake]
+no_of_classes: 7
+model_weights_path: models/model_weights_v1.pth
+threshold_prob: 50
+db_path: db_data/predictions.db
+model_version: "model_v0.0"
+prob_threshold: 0.5
+margin_threshold: 0.1
