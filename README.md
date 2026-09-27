@@ -86,7 +86,7 @@ Every prediction is stored — nothing is silently dropped. A prediction is
 flagged `need_review = true` when either:
 - top-1 probability is below `prob_threshold` (config, default `0.6`), or
 - the margin between top-1 and top-2 probability is below `margin_threshold`
-  (config, default `0.5`) — catching cases where the model is confidently
+  (config, default `0.05`) — catching cases where the model is confidently
   torn between two classes, not just generally unsure.
 
 `review_reason` records which condition fired: `low_confidence`,
