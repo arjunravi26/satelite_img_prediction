@@ -69,7 +69,7 @@ px**. Runs preprocessing → CNN inference → decision layer, and stores the
 result.
 
 On Website
-1. Go to: "http://127.0.0.1:8000/"(local ip address)
+1. Go to: "http://127.0.0.1:8000/" (local ip address)
 2. Upload Image
 3. Click Submit
 
