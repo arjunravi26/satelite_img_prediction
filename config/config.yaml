@@ -6,5 +6,5 @@ model_weights_path: models/model_weights_v1.pth
 threshold_prob: 50
 db_path: db_data/predictions.db
 model_version: "model_v0.0"
-prob_threshold: 0.5
-margin_threshold: 0.1
+prob_threshold: 0.6
+margin_threshold: 0.05
