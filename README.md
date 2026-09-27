@@ -22,6 +22,7 @@ API (FastAPI) → Service → Preprocessing → Model → Post-processing
 - **`src/prediction/`** — model architecture (`layers.py`) and inference wrapper (`model.py`).
 - **`src/preprocessing/preprocessing.py`** — image → tensor, scale pixel.
 - **`src/db/prediction_db.py`** — SQLite schema and insert data.
+- **`db_data/prediction.db`** — database file.
 - **`config/config.yaml`** — class labels, model weights path, thresholds, DB path.
 - **`experiment/sat_img_classifier.ipynb`** — training notebook (CNN trained from scratch on the provided tiles).
 - **`models/`** — trained weight checkpoints.
